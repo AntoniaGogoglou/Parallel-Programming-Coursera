@@ -1,0 +1,15 @@
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo /tmp/sbt-structure.xml
+run BlurSuite
+test scalashop.BlurSuite
+testOnly scalashop.BlurSuite
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo /tmp/sbt-structure.xml
+testOnly scalashop.BlurSuite
+compile scalashop/package.scala
+testOnly scalashop.BlurSuite
+runMain scalashop.VerticalBoxBlurRunner
+testOnly scalashop.BlurSuite
+runMain scalashop.VerticalBoxBlurRunner
+products
+testOnly scalashop.BlurSuite
+runMain scalashop.VerticalBoxBlurRunner
+run scalashop

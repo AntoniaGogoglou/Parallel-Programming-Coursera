@@ -1,0 +1,8 @@
+test KMeansSuite
+test: KMeansSuite
+test
+run-main kmeans.fun.ScalaShop
+ run-main kmeans.fun.ScalaShop
+runMain kmeans.KMeansRunner
+scala
+console
